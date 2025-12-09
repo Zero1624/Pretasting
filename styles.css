@@ -256,6 +256,7 @@ body {
     border: 1px solid var(--color-border);
     background: linear-gradient(180deg, var(--card-bg), var(--card-bg-gradient-end));
     box-shadow: var(--shadow-sm);
+    overflow-wrap: anywhere;
 }
 .references-card .section-title {
     font-family: var(--font-heading);
@@ -267,6 +268,13 @@ body {
     margin: 0.45rem 0;
     color: var(--color-text-light);
     font-size: 0.95rem;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    white-space: normal;
+    line-height: 1.35;
 }
 
 .logo:hover {
