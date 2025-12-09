@@ -243,6 +243,32 @@ body {
 .business-plan-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
 .business-plan-btn:active { transform: translateY(0); opacity: 0.95; }
 
+/* References section (minimal, uses brand tokens) */
+.references-section {
+    padding: 2.5rem 5%;
+    background-color: var(--color-bg);
+}
+.references-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: linear-gradient(180deg, var(--card-bg), var(--card-bg-gradient-end));
+    box-shadow: var(--shadow-sm);
+}
+.references-card .section-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text);
+}
+.references-list p {
+    margin: 0.45rem 0;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
 .logo:hover {
     transform: scale(1.05);
 }
