@@ -237,6 +237,96 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Documentation button - scroll to references
+    (function initDocumentationButton() {
+        const docBtn = document.getElementById('doc-btn');
+        if (!docBtn) return;
+
+        docBtn.addEventListener('click', () => {
+            const referencesSection = document.querySelector('.references-section');
+            if (referencesSection) {
+                referencesSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    })();
+
+    // Feedback Modal Handling
+    (function initFeedbackModal() {
+        const feedbackBtn = document.getElementById('feedback-btn');
+        const feedbackModal = document.getElementById('feedback-modal');
+        const feedbackModalClose = document.getElementById('feedback-modal-close');
+        const feedbackForm = document.getElementById('feedback-form');
+        const feedbackMessage = document.getElementById('feedback-message');
+        const feedbackConfirmation = document.getElementById('feedback-confirmation');
+
+        if (!feedbackBtn || !feedbackModal) return;
+
+        // Open modal
+        feedbackBtn.addEventListener('click', () => {
+            feedbackModal.classList.add('show');
+        });
+
+        // Close modal
+        feedbackModalClose.addEventListener('click', () => {
+            feedbackModal.classList.remove('show');
+        });
+
+        // Close modal on background click
+        feedbackModal.addEventListener('click', (e) => {
+            if (e.target === feedbackModal) {
+                feedbackModal.classList.remove('show');
+            }
+        });
+
+        // Handle form submission
+        feedbackForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Validate that message is filled
+            if (!feedbackMessage.value.trim()) {
+                alert('Please enter a message.');
+                return;
+            }
+
+            // Gather form data
+            const formData = {
+                name: document.getElementById('feedback-name').value.trim(),
+                topic: document.getElementById('feedback-topic').value,
+                message: feedbackMessage.value.trim()
+            };
+
+            try {
+                // Send to backend
+                const response = await fetch('/api/feedback', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (response.ok) {
+                    // Show confirmation
+                    feedbackForm.style.display = 'none';
+                    feedbackConfirmation.style.display = 'block';
+
+                    // Reset form
+                    setTimeout(() => {
+                        feedbackForm.reset();
+                        feedbackForm.style.display = 'block';
+                        feedbackConfirmation.style.display = 'none';
+                        feedbackModal.classList.remove('show');
+                    }, 2000);
+                } else {
+                    alert('An error occurred. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error submitting feedback:', error);
+                alert('An error occurred. Please try again.');
+            }
+        });
+    })();
+
     // Initialize everything
     hideLoadingScreen();
     initScrollAnimations();
