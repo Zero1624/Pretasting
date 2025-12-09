@@ -1,0 +1,158 @@
+{
+  "restaurant": {
+    "name": "Pre-Taste",
+    "tagline": "Test the Taste at Pre-Taste—The Only PreTest You'll Enjoy"
+  },
+  "categories": [
+    {
+      "id": "appetizers",
+      "name": "Appetizers",
+      "items": [
+        {
+          "name": "Kinilaw",
+          "description": "A delicacy from Mindanao region, essentially ceviche with tropical flavors of mango. Made with a unique and traditional recipe.",
+          "price": 79.00,
+          "image": "https://i.imgur.com/SXDJKa8.png"
+        },
+        {
+          "name": "Lumpiang Ubod/Sariwa",
+          "description": "A wholesome fresh spring roll from Negros Occidental, cheesy with a crispy wrapper alongside our Honey Garlic Peanut Sauce.",
+          "price": 60.00,
+          "image": "https://i.imgur.com/2bEFest.png"
+        },
+        {
+          "name": "Cheesy Longganisa",
+          "description": "A tasty flavor of longganisa with a twist from the cheese. Making it more appetizing, flavorful, and savory.",
+          "price": 65.00,
+          "image": "https://i.imgur.com/bMScpYK.png"
+        },
+        {
+          "name": "Bicol-Style Longganisa",
+          "description": "Flavorful sausage inspired by Bicol Express, with savory and spicy meat, paired with cheese or veggies, shaped into lollipop balls.",
+          "price": 70.00,
+          "image": "https://i.imgur.com/s2vTwX5.png"
+        },
+        {
+          "name": "Kinunot",
+          "description": "A Bicolano dish rich in creaminess, served with thick and comforting tender seasoned meat.",
+          "price": 120.00,
+          "image": "https://i.imgur.com/MVwW8UV.png"
+        },
+        {
+          "name": "Sinuglaw Skewer",
+          "description": "A touch of savory flavor of pork belly and marinated fish, freshly served at an affordable price.",
+          "price": 50.00,
+          "image": "https://i.imgur.com/u0jzduK.png"
+        },
+        {
+          "name": "Cheesy Laing Bruschetta",
+          "description": "A fusion of Filipino and Italian flavors. Richness in creaminess, a touch of spicy laing, and crispy bruschetta.",
+          "price": 85.00,
+          "image": "https://i.imgur.com/tHaNXG2.png"
+        },
+        {
+          "name": "Cheesy Alimango Canape",
+          "description": "Bite-sized canape with creamy alimango shredded on top, its creaminess melts in your mouth.",
+          "price": 120.00,
+          "image": "https://i.imgur.com/0LAszOG.png"
+        },
+        {
+          "name": "Ginabot Fritters",
+          "description": "Cebuano street food of deep-fried pork intestines, finely chopped and mixed with shredded taro root, served with sweet and spicy dipping sauce.",
+          "price": 50.00,
+          "image": "https://i.imgur.com/loHwWVv.png"
+        },
+        {
+          "name": "Humba Spring Roll Dippers",
+          "description": "Slow-cooked Cebuano pork shredded and wrapped into small spring rolls, then deep-fried until crispy.",
+          "price": 100.00,
+          "image": "https://i.imgur.com/CDTVT7T.png"
+        }
+      ]
+    },
+    {
+      "id": "mains",
+      "name": "Main Dishes",
+      "items": [
+        {
+          "name": "Pancit Molo",
+          "description": "A healthier version featuring vegetable-filled dumplings simmered in hot broth for comfort and refreshment.",
+          "price": 139.00,
+          "image": "https://i.imgur.com/kYilVny.png"
+        },
+        {
+          "name": "Mini Pizza Chicken Inasal",
+          "description": "A smoky, tangy, cheesy appetizer. Iconic chicken inasal from Bacolod served as a pizza with the same smoky and savory flavor.",
+          "price": 150.00,
+          "image": "https://i.imgur.com/qS3HLK8.png"
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "items": [
+        {
+          "name": "Sinapot",
+          "description": "A comforting Bicolano snack of mashed saba bananas shaped into bite-sized balls, coated with flavored glaze, served on a stick.",
+          "price": 40.00,
+          "image": "https://i.imgur.com/DclF9ud.png"
+        },
+        {
+          "name": "Ginataang Bilo-bilo",
+          "description": "From Aklan, chewy glutinous rice balls simmered in coconut milk and sugar, served halo-halo style.",
+          "price": 100.00,
+          "image": "https://i.imgur.com/FFhAj07.png"
+        },
+        {
+          "name": "Cassava",
+          "description": "A spin on the traditional Bohol delicacy, sweet with a gooey center. A blend of cassava and mashed ube topped with sweetened milk glaze.",
+          "price": 40.00,
+          "image": "https://i.imgur.com/LGlWybs.png"
+        },
+        {
+          "name": "Buchi and Camote Cheese Balls",
+          "description": "Glutinous rice dough mixed with mashed sweet potato, filled with local goat cheese and chorizo de Cebu, served with honey-mustard sauce.",
+          "price": 70.00,
+          "image": "https://i.imgur.com/YB9XW10.png"
+        },
+        {
+          "name": "Moron",
+          "description": "A comforting Eastern Samar delicacy of sticky rice cooked in coconut milk and cocoa, in a small, flavor-packed portion.",
+          "price": 40.00,
+          "image": "https://i.imgur.com/yl4rSbZ.png"
+        },
+        {
+          "name": "Tambis-Tambis",
+          "description": "A simple, sweet coconut treat from Eastern Samar sprinkled with white sugar, transformed into a coconut snowball.",
+          "price": 50.00,
+          "image": "https://i.imgur.com/CvwjH9o.png"
+        },
+        {
+          "name": "Binagol",
+          "description": "Steamed dessert from Leyte made from grated taro, coconut milk, and condensed milk, with savory fillings like salted egg or chicharon.",
+          "price": 100.00,
+          "image": "https://i.imgur.com/R6FUxD3.png"
+        },
+        {
+          "name": "Kamote Cue",
+          "description": "Popular Filipino street food, crispy sweet potato balls with cheese filling, double-coated in chocolate for a decadent flavor.",
+          "price": 60.00,
+          "image": "https://i.imgur.com/IwwHgAE.png"
+        }
+      ]
+    },
+    {
+      "id": "snacks",
+      "name": "Snacks",
+      "items": [
+        {
+          "name": "Cassava Chips",
+          "description": "Crunchy cassava chips cut like French fries, dusted with bold cheese powder and drizzled with rich, melted chocolate.",
+          "price": 40.00,
+          "image": "https://i.imgur.com/e5STXZv.png"
+        }
+      ]
+    }
+  ]
+}

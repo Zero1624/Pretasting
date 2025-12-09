@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Taste | Filipino Appetizers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loading-screen">
+        <img src="https://imgur.com/hqNrRJe.png" alt="Loading" class="loading-logo">
+        <p class="loading-text">Pre-Taste</p>
+    </div>
+
+    <header class="header">
+        <div class="logo-container">
+            <a href="#hero" class="logo-link">
+                <img src="https://imgur.com/hqNrRJe.png" alt="Pre-Taste Logo" class="logo" id="logo">
+                <span class="logo-text">Pre-Taste</span>
+            </a>
+        </div>
+        <nav class="nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#team" class="nav-link">Team</a>
+            <a href="#contact" class="nav-link">Location</a>
+        </nav>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+    </header>
+
+    <section class="hero" id="hero">
+        <img src="https://i.imgur.com/mBaFWZm.png" alt="Pre-Taste Restaurant Banner" class="hero-image" id="hero-banner">
+        <div class="hero-overlay">
+            <h1 class="hero-title">Pre-Taste</h1>
+            <p class="hero-subtitle">Test the Taste at Pre-Taste—The Only PreTest You'll Enjoy</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section fade-in-section" id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-tag">Our Story</span>
+                    <h2 class="section-title">From Classmates to Business Partners</h2>
+                    <p>Pre-Taste Restaurant was born from the friendship and shared dreams of 16 senior high school classmates. What started as simple snack sales during school events grew into a passion for creating innovative Filipino appetizers.</p>
+                    <p>During our time together, we worked on countless food projects, shared meals during breaks, and dreamed of someday opening our own food business. Some of us pursued culinary programs, others studied design and marketing, but we all stayed connected by our love for Filipino food and our commitment to each other.</p>
+                    <p>After graduation, we combined our unique skills—from cooking and plating to branding and customer service—to create Pre-Taste. Today, we proudly serve appetizers made with effort, care, and genuine love for good food, staying true to the dream we built together in high school.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://i.imgur.com/hqNrRJe.png" alt="Pre-Taste Logo" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Behind the Logo Section -->
+    <section class="logo-story-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Our Identity</span>
+            <h2 class="section-title">Behind the Logo</h2>
+            <p class="section-subtitle">Every element of our logo tells a story about who we are and what we stand for</p>
+            <div class="logo-story-grid">
+                <div class="logo-story-card">
+                    <div class="logo-story-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                    </div>
+                    <h3>The Canapé</h3>
+                    <p>The canapé at the center represents our specialty—appetizers that are beautifully crafted and bursting with flavor.</p>
+                </div>
+                <div class="logo-story-card">
+                    <div class="logo-story-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h3>Go, Grow, Glow</h3>
+                    <p>The vegetables surrounding the canapé symbolize our commitment to nutritious food that gives energy, helps growth, and keeps you healthy.</p>
+                </div>
+                <div class="logo-story-card">
+                    <div class="logo-story-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+                    </div>
+                    <h3>Warm Colors</h3>
+                    <p>Our copper, burgundy, and cream palette creates a welcoming atmosphere that reflects the warmth of Filipino hospitality.</p>
+                </div>
+                <div class="logo-story-card">
+                    <div class="logo-story-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    </div>
+                    <h3>Since 2025</h3>
+                    <p>This marks the year we turned our high school dream into reality, establishing Pre-Taste as a proud Filipino food business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission, Vision & Goals Section -->
+    <section class="mission-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Our Purpose</span>
+            <h2 class="section-title">Mission, Vision & Goals</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To continuously provide excellent, freshly made, and distinctively designed appetizers that combine creativity and tradition. By providing exceptional customer service, managing food responsibly, and being dedicated to ongoing development and culinary innovation, our restaurant hopes to provide delightful dining experiences.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To become a well-known and successful local food brand that celebrates innovation in every bite by transforming traditional Filipino snacks into tasty, inventive appetizers that unite people.</p>
+                </div>
+                <div class="mission-card goals-card">
+                    <div class="mission-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    </div>
+                    <h3>Our Goals</h3>
+                    <ul class="goals-list">
+                        <li>Offer inventive and distinctive appetizer options that showcase Filipino tastes with a contemporary spin</li>
+                        <li>Ensure customer satisfaction by sustaining excellent customer service, cleanliness, and consistent product quality</li>
+                        <li>Develop a loyal customer base by providing reasonable costs, unique tastes, and a welcoming environment</li>
+                        <li>Promote staff professionalism and food safety by giving employees the proper training and uniform standards</li>
+                        <li>Expand the business by adding new, inventive menu items and eventually other locations or catering services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Dishes Section -->
+    <section class="signature-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Featured Favorites</span>
+            <h2 class="section-title">Signature Dishes</h2>
+            <p class="section-subtitle">Our most beloved appetizers that showcase the best of Filipino flavors</p>
+            <div class="signature-grid" id="signature-dishes">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="search-container">
+            <input type="text" id="search-input" class="search-input" placeholder="Search our menu..." aria-label="Search menu">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <div class="category-nav">
+            <button class="category-btn active" data-category="all" aria-selected="true">All</button>
+            <button class="category-btn" data-category="appetizers" aria-selected="false">Appetizers</button>
+            <button class="category-btn" data-category="mains" aria-selected="false">Main Dishes</button>
+            <button class="category-btn" data-category="desserts" aria-selected="false">Desserts</button>
+            <button class="category-btn" data-category="snacks" aria-selected="false">Snacks</button>
+        </div>
+
+        <div class="menu-container" id="menu-container">
+            <!-- Menu items will be loaded here by JavaScript -->
+        </div>
+
+        <div class="no-results" id="no-results">
+            <p>No items found matching your search.</p>
+        </div>
+    </section>
+
+    <!-- Flavors of the Philippines Section -->
+    <section class="flavors-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Regional Heritage</span>
+            <h2 class="section-title">Flavors of the Philippines</h2>
+            <div class="flavors-content">
+                <div class="flavors-map">
+                    <div class="map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Philippines</span>
+                    </div>
+                </div>
+                <div class="flavors-text">
+                    <p>Our menu is a culinary journey across the Philippine archipelago, bringing together the distinct flavors and traditions of different regions. Each dish tells a story of local heritage, passed down through generations and lovingly recreated with a modern twist.</p>
+                    <div class="regions-grid">
+                        <span class="region-tag">Mindanao - Kinilaw</span>
+                        <span class="region-tag">Bicol - Kinunot, Laing</span>
+                        <span class="region-tag">Negros Occidental - Lumpiang Ubod</span>
+                        <span class="region-tag">Bacolod - Chicken Inasal</span>
+                        <span class="region-tag">Cebu - Ginabot, Humba</span>
+                        <span class="region-tag">Aklan - Ginataang Bilo-bilo</span>
+                        <span class="region-tag">Bohol - Cassava</span>
+                        <span class="region-tag">Leyte - Binagol</span>
+                        <span class="region-tag">Eastern Samar - Moron, Tambis-Tambis</span>
+                    </div>
+                    <p class="flavors-note">From the fresh seafood of Mindanao to the coconut-rich dishes of Bicol, every appetizer celebrates the unique culinary identity of its region.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">What Makes Us Special</span>
+            <h2 class="section-title">Why Choose Pre-Taste</h2>
+            <div class="why-choose-grid">
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3>Quality Over Quantity</h3>
+                    <p>Each dish is crafted with fresh ingredients and genuine care, ensuring every bite delivers authentic Filipino flavors.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                    </div>
+                    <h3>Affordable Prices</h3>
+                    <p>High-quality Filipino appetizers at prices that won't break the bank—delicious food for everyone.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3>Comfortable Atmosphere</h3>
+                    <p>A welcoming space designed to make you feel at home while you enjoy your meal with friends and family.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <h3>Traditional & Innovative</h3>
+                    <p>We honor Filipino culinary traditions while adding creative twists that make each dish uniquely Pre-Taste.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                    <h3>Freshly Prepared</h3>
+                    <p>Every order is made fresh to ensure the best taste and quality—no shortcuts, just great food.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                    </div>
+                    <h3>Passion-Driven</h3>
+                    <p>Created by 16 friends who share a genuine love for Filipino food—our passion shows in every dish.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Standards Section -->
+    <section class="standards-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Our Commitment</span>
+            <h2 class="section-title">Our Standards</h2>
+            <p class="section-subtitle">Quality assurance commitments we never compromise on</p>
+            <div class="standards-grid">
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    </div>
+                    <h4>Food Safety First</h4>
+                    <p>Strict hygiene protocols and proper food handling at every step</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                    </div>
+                    <h4>Consistent Quality</h4>
+                    <p>Standard recipes and preparation methods for reliable taste</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                    </div>
+                    <h4>Fresh Ingredients</h4>
+                    <p>Only the freshest, quality ingredients make it to your plate</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    </div>
+                    <h4>Trained Staff</h4>
+                    <p>Professional training ensures excellent service every visit</p>
+                </div>
+                <div class="standard-card">
+                    <div class="standard-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="m9 12 2 2 4-4"/></svg>
+                    </div>
+                    <h4>Clean Environment</h4>
+                    <p>Spotless dining areas and kitchen facilities maintained daily</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section fade-in-section" id="team">
+        <div class="section-container">
+            <span class="section-tag">Meet the Founders</span>
+            <h2 class="section-title">Our Team</h2>
+            <p class="section-subtitle">16 classmates who turned a high school dream into reality</p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Matt Ace Macabenta</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Owen Mendigorin</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Prince Angelo Paz</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Gian Anthony Premia</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Justine Tejada</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Rain Victoria</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Jennievy Blase</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Divine Grace Bruce</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Jhenelle Buenaflor</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Maria Lulu Del Rosario</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Bera Joy Farro</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Kylie Fulache</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Kirsten Ashe Jimenez</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Melody Peraan</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Jhaycell Rellora</span>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="member-name">Marry Joy Tabuena</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location-section fade-in-section" id="contact">
+        <div class="section-container">
+            <span class="section-tag">Visit Us</span>
+            <h2 class="section-title">Our Location</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Centennial II, Nagpayong,</p>
+                            <p>Pinagbuhatan, Pasig City,</p>
+                            <p>NCR, Philippines</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <h4>Store Hours</h4>
+                            <p>Monday - Friday: 10am - 9pm</p>
+                            <p>Saturday - Sunday: 9am - 10pm</p>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Contact</h4>
+                            <p>Email: hello@pretaste.ph</p>
+                            <p>Phone: +63 123 456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        class="map-embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.4208826895687!2d121.08453931484194!3d14.564449989826825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7f3e1a7b3c9%3A0x3c5a1d3f6f7e7f1f!2sCentennial%20II%2C%20Pasig%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1234567890123!5m2!1sen!2sph"
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Pre-Taste Location Map">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section fade-in-section">
+        <div class="section-container">
+            <span class="section-tag">Connect With Us</span>
+            <h2 class="section-title">Follow Our Journey</h2>
+            <div class="social-grid">
+                <a href="#" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-card" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a1 1 0 0 0-1-1H3v10h5a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1"/><path d="M9 3v7"/><path d="M15 3a2 2 0 0 1 2 2v14"/><circle cx="15" cy="12" r="1"/></svg>
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://i.imgur.com/hqNrRJe.png" alt="Pre-Taste Logo" class="footer-logo">
+                <p class="footer-tagline">Test the Taste at Pre-Taste—The Only PreTest You'll Enjoy</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <nav>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#menu" class="footer-link">Menu</a>
+                    <a href="#team" class="footer-link">Team</a>
+                    <a href="#contact" class="footer-link">Location</a>
+                </nav>
+            </div>
+            <div class="footer-section">
+                <h3>Visit Us</h3>
+                <p>Centennial II, Nagpayong,</p>
+                <p>Pinagbuhatan, Pasig City,</p>
+                <p>NCR, Philippines</p>
+            </div>
+            <div class="footer-section">
+                <h3>Hours</h3>
+                <p>Monday - Friday: 10am - 9pm</p>
+                <p>Saturday - Sunday: 9am - 10pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pre-Taste. All rights reserved. Since 2025.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
