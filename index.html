@@ -65,6 +65,7 @@
                     <p>Pre-Taste Restaurant was born from the friendship and shared dreams of 16 senior high school classmates. What started as simple snack sales during school events grew into a passion for creating innovative Filipino appetizers.</p>
                     <p>During our time together, we worked on countless food projects, shared meals during breaks, and dreamed of someday opening our own food business. Some of us pursued culinary programs, others studied design and marketing, but we all stayed connected by our love for Filipino food and our commitment to each other.</p>
                     <p>After graduation, we combined our unique skills—from cooking and plating to branding and customer service—to create Pre-Taste. Today, we proudly serve appetizers made with effort, care, and genuine love for good food, staying true to the dream we built together in high school.</p>
+                    <button class="doc-btn" id="doc-btn" aria-label="View Documentation">Documentation</button>
                 </div>
                 <div class="about-image">
                     <img src="https://i.imgur.com/hqNrRJe.png" alt="Pre-Taste Logo" class="about-img">
@@ -463,6 +464,9 @@
                             <p>Phone: +63 123 456 7890</p>
                         </div>
                     </div>
+                    <div style="display: flex; justify-content: center; width: 100%; margin-top: 1.5rem;">
+                        <button class="feedback-btn" id="feedback-btn" aria-label="Send Feedback">Feedback</button>
+                    </div>
                 </div>
                 <div class="location-map">
                     <iframe 
@@ -551,6 +555,37 @@
             </div>
         </div>
     </section>
+
+    <!-- Feedback Modal Form -->
+    <div id="feedback-modal" class="feedback-modal">
+        <div class="feedback-modal-content">
+            <button class="feedback-modal-close" id="feedback-modal-close" aria-label="Close feedback form">&times;</button>
+            <h2>Send Us Your Feedback</h2>
+            <form id="feedback-form" class="feedback-form">
+                <div class="form-group">
+                    <label for="feedback-name">Name (Optional)</label>
+                    <input type="text" id="feedback-name" name="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-topic">Topic (Optional)</label>
+                    <select id="feedback-topic" name="topic">
+                        <option value="">Select a topic...</option>
+                        <option value="food">Food Quality & Menu</option>
+                        <option value="about">About Us & Service</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="feedback-message">Message <span class="required">*</span></label>
+                    <textarea id="feedback-message" name="message" placeholder="Tell us what you think..." required></textarea>
+                </div>
+                <button type="submit" class="feedback-submit-btn">Submit Feedback</button>
+            </form>
+            <div id="feedback-confirmation" class="feedback-confirmation" style="display: none;">
+                <p>Thank you! Your feedback has been received.</p>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="footer-content">
