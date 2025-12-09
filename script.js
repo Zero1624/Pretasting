@@ -1,3 +1,15 @@
+// Apply initial theme as early as possible to avoid flash
+(function() {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme) {
+        document.documentElement.setAttribute('data-theme', storedTheme);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     const loadingScreen = document.getElementById('loading-screen');
     const menuContainer = document.getElementById('menu-container');
@@ -9,6 +21,40 @@ document.addEventListener('DOMContentLoaded', () => {
     let menuData = [];
     let currentCategory = 'all';
     let searchTerm = '';
+
+    // Theme toggle wiring (keeps separate from menu logic)
+    (function attachThemeToggle() {
+        const themeToggle = document.getElementById('theme-toggle');
+        if (!themeToggle) return;
+
+        const getCurrentTheme = () => document.documentElement.getAttribute('data-theme') || 'light';
+
+        const setTheme = (theme) => {
+            document.documentElement.setAttribute('data-theme', theme);
+            try { localStorage.setItem('theme', theme); } catch (e) {}
+            const label = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+            themeToggle.setAttribute('aria-label', label);
+        };
+
+        const toggleTheme = () => setTheme(getCurrentTheme() === 'light' ? 'dark' : 'light');
+
+        // Initialize aria label
+        setTheme(getCurrentTheme());
+
+        themeToggle.addEventListener('click', toggleTheme);
+        themeToggle.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleTheme(); }
+        });
+
+        if (window.matchMedia) {
+            const mq = window.matchMedia('(prefers-color-scheme: dark)');
+            mq.addEventListener ? mq.addEventListener('change', (e) => {
+                if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light');
+            }) : mq.addListener((e) => {
+                if (!localStorage.getItem('theme')) setTheme(e.matches ? 'dark' : 'light');
+            });
+        }
+    })();
 
     function hideLoadingScreen() {
         if (loadingScreen) {
