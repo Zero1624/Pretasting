@@ -17,12 +17,71 @@
     --shadow-md: 0 4px 16px rgba(74, 55, 40, 0.12);
     --shadow-lg: 0 8px 32px rgba(74, 55, 40, 0.15);
     --transition: all 0.3s ease;
+    /* Theme transition used for color/background/border changes */
+    --theme-transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+    /* UI-specific variables */
+    --header-bg-start: #8B5A2B;
+    --header-bg-mid: #B87333;
+    --header-bg-end: #D4A574;
+    --hero-overlay-start: rgba(74, 55, 40, 0.3);
+    --hero-overlay-end: rgba(74, 55, 40, 0.5);
+    --card-bg: #ffffff;
+    --card-bg-gradient-start: #ffffff;
+    --card-bg-gradient-end: #F5E6D3;
+    --loading-bg-start: #F5E6D3;
+    --loading-bg-end: #FDF8F3;
+    --signature-bg-start: #8B5A2B;
+    --signature-bg-end: #722F37;
+    --standards-bg-start: #4A3728;
+    --standards-bg-end: #3A2A1E;
+    --footer-bg-start: #4A3728;
+    --footer-bg-end: #3A2A1E;
+    --standard-card-bg: rgba(255, 255, 255, 0.1);
+    --standard-card-bg-hover: rgba(255, 255, 255, 0.15);
+}
+
+/* Dark Mode Colors */
+[data-theme="dark"] {
+    --color-bg: #1a1410;
+    --color-bg-alt: #241c16;
+    --color-text: #E5D5C5;
+    --color-text-light: #C4A78A;
+    --color-accent: #D4A574;
+    --color-accent-light: #E5C49B;
+    --color-accent-dark: #B87333;
+    --color-burgundy: #8B3D47;
+    --color-cream: #E5D5C5;
+    --color-border: #3a2f25;
+    --color-white: #2d241c;
+    --color-green: #5a8c6a;
+    --header-bg-start: #2a2218;
+    --header-bg-mid: #3a2f25;
+    --header-bg-end: #4a3c2f;
+    --hero-overlay-start: rgba(10, 8, 6, 0.5);
+    --hero-overlay-end: rgba(10, 8, 6, 0.7);
+    --card-bg: #2d241c;
+    --card-bg-gradient-start: #2d241c;
+    --card-bg-gradient-end: #2a2218;
+    --loading-bg-start: #1a1410;
+    --loading-bg-end: #241c16;
+    --signature-bg-start: #2a2218;
+    --signature-bg-end: #3a2620;
+    --standards-bg-start: #1a1410;
+    --standards-bg-end: #0f0b08;
+    --footer-bg-start: #1a1410;
+    --footer-bg-end: #0f0b08;
+    --standard-card-bg: rgba(255, 255, 255, 0.05);
+    --standard-card-bg-hover: rgba(255, 255, 255, 0.08);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: var(--theme-transition);
 }
 
 html {
@@ -116,6 +175,73 @@ body {
     border-radius: 50%;
     box-shadow: var(--shadow-sm);
 }
+
+.logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-cream);
+    letter-spacing: 0.6px;
+    transition: var(--theme-transition);
+}
+
+/* Theme toggle styles */
+.theme-toggle {
+    background: none;
+    border: 2px solid rgba(255,255,255,0.12);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-cream);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.theme-toggle svg { width: 20px; height: 20px; display: block; }
+.theme-toggle .sun-icon, .theme-toggle .moon-icon { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); transition: opacity 0.25s ease, transform 0.25s ease; }
+
+[data-theme="light"] .theme-toggle .sun-icon { opacity: 0; transform: translate(-50%, -50%) scale(0.6) rotate(-90deg); }
+[data-theme="light"] .theme-toggle .moon-icon { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+
+[data-theme="dark"] .theme-toggle .sun-icon { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(0deg); }
+[data-theme="dark"] .theme-toggle .moon-icon { opacity: 0; transform: translate(-50%, -50%) scale(0.6) rotate(90deg); }
+
+/* Business Plan Reference section styles */
+.business-plan-section {
+    padding: 3rem 5%;
+    background-color: var(--color-bg-alt);
+}
+.business-plan-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, var(--card-bg-gradient-start), var(--card-bg-gradient-end));
+    border: 1px solid var(--color-border);
+    padding: 1.75rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+.business-plan-card p { color: var(--color-text-light); margin-bottom: 1rem; }
+.business-plan-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
+    color: var(--color-cream);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.12s ease, box-shadow 0.12s ease, opacity 0.12s ease;
+}
+.business-plan-btn:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.business-plan-btn:active { transform: translateY(0); opacity: 0.95; }
 
 .logo:hover {
     transform: scale(1.05);
